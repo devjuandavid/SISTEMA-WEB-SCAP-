@@ -1,0 +1,107 @@
+ERROR - 2024-06-04 02:48:52 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\scap\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\scap\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'scap_db', 3306, '', 0)
+#1 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\scap\app\Controllers\Home.php(22): CodeIgniter\Database\BaseConnection->query('SELECT *\n      ...')
+#4 C:\xampp\htdocs\scap\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\scap\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\scap\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scap\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\scap\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\scap\app\Controllers\Home.php(22): CodeIgniter\Database\BaseConnection->query('SELECT *\n      ...')
+#3 C:\xampp\htdocs\scap\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\scap\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\scap\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scap\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-04 02:48:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseConnection->query('SELECT *
+            FROM asistencia a 
+            INNER JOIN usuario u ON u.usu_id = a.usu_id
+            WHERE a.asi_fecha = \'2024-06-04\'
+            ORDER BY a.asi_id DESC ')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-04 03:13:25 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\scap\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\scap\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'scap_db', 3306, '', 0)
+#1 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\scap\app\Controllers\Home.php(22): CodeIgniter\Database\BaseConnection->query('SELECT *\n      ...')
+#4 C:\xampp\htdocs\scap\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\scap\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\scap\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scap\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\scap\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\scap\app\Controllers\Home.php(22): CodeIgniter\Database\BaseConnection->query('SELECT *\n      ...')
+#3 C:\xampp\htdocs\scap\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\scap\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\scap\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scap\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-04 03:13:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseConnection->query('SELECT *
+            FROM asistencia a 
+            INNER JOIN usuario u ON u.usu_id = a.usu_id
+            WHERE a.asi_fecha = \'2024-06-04\'
+            ORDER BY a.asi_id DESC ')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-04 03:17:04 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\scap\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\scap\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'scap_db', 3306, '', 0)
+#1 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\scap\app\Controllers\Home.php(22): CodeIgniter\Database\BaseConnection->query('SELECT *\n      ...')
+#4 C:\xampp\htdocs\scap\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\scap\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\scap\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scap\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\scap\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\scap\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\scap\app\Controllers\Home.php(22): CodeIgniter\Database\BaseConnection->query('SELECT *\n      ...')
+#3 C:\xampp\htdocs\scap\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\scap\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\scap\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scap\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-04 03:17:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseConnection->query('SELECT *
+            FROM asistencia a 
+            INNER JOIN usuario u ON u.usu_id = a.usu_id
+            WHERE a.asi_fecha = \'2024-06-04\'
+            ORDER BY a.asi_id DESC ')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-04 03:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 03:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
